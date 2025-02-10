@@ -21,3 +21,14 @@ const printSumVar = function (a, b){
 }
 
 printSumVar(2, 3);
+
+//put a arrow function inside a variable
+const sum2Num = (a, b) => {
+    return a + b
+}
+
+console.log(sum2Num(6,5));
+
+//implicit return 
+const subtra = (a, b) => a - b;
+console.log(subtra(11,11));
