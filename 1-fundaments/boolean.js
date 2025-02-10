@@ -27,3 +27,7 @@ console.log(!!null);
 console.log(!!NaN);
 console.log(!!undefined);
 
+//comum de ocorrer:
+let nome = '';
+
+console.log(nome || 'Desconhecido')
