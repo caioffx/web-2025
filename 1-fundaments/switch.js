@@ -8,7 +8,7 @@ let op = 0;
 let cont = 0;
 
 while(op != -1){
-    op = getIntRandomBet(-1,10);
+    op = getIntRandomBet(-1,100);
     console.log('op choose: ' + op);
     cont++;
 }
