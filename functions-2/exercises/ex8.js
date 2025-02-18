@@ -26,11 +26,26 @@ let qntPartidas = prompt(`Entre com o número de partidas realizadas: `)
 //irá comparar a última inclusão/último valor do array e se for maior, adiciona 1 no contador de recorde. também verificará em qual posição do array o menor valor se encontra e devolver pro usuário
 
 let cont = 0;
+let menorValor = 0;
 
 for(let j = 0; j < qntPartidas; j++){
     if(pontos[j] < pontos[j+1]){
-        cont++;
-    }else if()
+        if(pontos[0]){
+            cont++;
+            menorValor = j;
+        }
+    }else{
+        cont=cont;
+        menorValor = j+1;
+    }
+
+}
+
+if(cont === 0){
+    console.log(`O número de recordes batidos foi de ${cont} e a partida com menor pontuação foi a de número ${menorValor}`);
+}else{
+    console.log(`O número de recordes batidos foi de ${cont-1} e a partida com menor pontuação foi a de número ${menorValor}`);
+
 }
 
 
