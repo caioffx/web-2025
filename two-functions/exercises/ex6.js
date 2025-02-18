@@ -15,6 +15,7 @@ function compostos(capIni, taxaJuro, tempo){
     taxaJuro = 1+taxaJuro;
     let juros = (capIni)*(Math.pow(taxaJuro, tempo));
     let montante = juros + capIni;
+    montante = montante.toFixed(2);
     console.log('O valor em juros compostos é de ' + montante)
 }
 
