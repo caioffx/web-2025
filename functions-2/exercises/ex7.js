@@ -29,4 +29,12 @@ function bhaskara(a,b,c){
     }
 }
 
-bhaskara(-1,1,6);
+const PromptFunction = require('prompt-sync');
+const prompt = PromptFunction();
+
+
+let a = prompt('Insira valor de ax²: ');
+let b = prompt('Insira valor de bx: ');
+let c = prompt('Insira valor de c: ');
+
+bhaskara(a,b,c);
