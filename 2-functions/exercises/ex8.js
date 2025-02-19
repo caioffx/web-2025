@@ -30,21 +30,18 @@ let menorValor = 0;
 
 for(let j = 0; j < qntPartidas; j++){
     if(pontos[j] < pontos[j+1]){
-        if(pontos[0]){
-            cont++;
-            menorValor = j;
-        }
+        cont++;
+        menorValor = j;
     }else{
         cont=cont;
-        menorValor = j+1;
     }
 
 }
 
 if(cont === 0){
-    console.log(`O número de recordes batidos foi de ${cont} e a partida com menor pontuação foi a de número ${menorValor}`);
+    console.log(`O número de recordes batidos foi de ${cont} e a partida com menor pontuação foi a de número ${menorValor+1}`);
 }else{
-    console.log(`O número de recordes batidos foi de ${cont-1} e a partida com menor pontuação foi a de número ${menorValor}`);
+    console.log(`O número de recordes batidos foi de ${cont-1} e a partida com menor pontuação foi a de número ${menorValor+1}`);
 
 }
 
