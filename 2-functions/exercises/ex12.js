@@ -3,17 +3,15 @@
 const PromptFunction = require('prompt-sync');
 const prompt = PromptFunction();
 
-let num = prompt('Digite um número para calcular seu fatorial: ');
+let num = parseInt(prompt('Digite um número para calcular seu fatorial: '));
 
 function fatorial(num){
 
-    for(let i = num; i >= 1; i--){
-        let prox = i-1;
-        num = num*prox;
-        console.log(num);
+    let cont = 1;
+    for(let i = num; i > 1; i--){
+        cont *= i;
     }
-
-
+    console.log(cont);
 }
 
 fatorial(num)
